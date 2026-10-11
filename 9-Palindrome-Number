@@ -1,0 +1,18 @@
+class Solution {
+public:
+    bool isPalindrome(int x){
+        long long reverse=0;
+        int real=x;
+        while(x>0){
+            int id=x%10;
+            reverse=reverse*10+id;
+            x=x/10;
+        }
+        if(real==reverse){
+            return true;
+        }
+        else{
+        return false;
+        }
+    }
+};
